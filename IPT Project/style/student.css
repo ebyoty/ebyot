@@ -1,0 +1,387 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d5acdd;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    background-color:transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav .right-links a,
+.nav .right-links .btn {
+    color: rgb(240, 237, 240);
+    text-decoration: none;
+    margin-left: 15px;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 0px 10px;
+
+}
+.nav .right-links .btn {
+    background-color: #a11bca;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.nav .right-links .btn:hover {
+    background-color: #550569;
+}
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+}
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+.right-links a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+.right-links .btn {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.main-box.students {
+    padding: 0px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.main-box.students h2 {
+    margin-top: 0;
+}
+
+.main-box.students form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.main-box.students form .box {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.main-box.students form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-box.students form input[type="text"],
+.main-box.students form input[type="email"],
+.main-box.students form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.main-box.students form input[type="text"],
+.main-box.students form input[type="email"],
+.main-box.students form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.main-box.students form input[type="submit"]:hover {
+    background-color: #61096d;
+}
+.main-box.students table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.main-box.students table th,
+.main-box.students table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.main-box.students table th {
+    background-color: #aa36f7;
+    color: white;
+}
+.main-box.students table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.main-box.students table a {
+    color: #d9534f;
+    text-decoration: none;
+}
+.main-box.students table a:hover {
+    text-decoration: underline;
+}
+/*edit student*/
+.btn-warning {
+    border-color: #eef1ee;
+    padding: 10px 20px;
+    background-color: #7311919f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+.btn-warning:hover {
+    background-color: #e708dc;
+    border-color: #ebdbeb;
+    color: #1013d4;
+}
+
+.btn-warning:focus,
+.btn-warning.focus {
+    box-shadow: 0 0 0 0.2rem rgba(246, 247, 246, 0.5);
+}
+.add-warning-form {
+    display: none; 
+}
+/*Add New Student Form */
+.btn-success {
+    border-color: #eef1ee;
+    padding: 10px 20px;
+    background-color: #7311919f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+.btn-success:hover {
+    background-color: #e708dc;
+    border-color: #ebdbeb;
+    color: #1013d4;
+}
+.btn-success:focus,
+.btn-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(246, 247, 246, 0.5);
+}
+.add-student-form {
+    display: none; 
+}
+.add-student-form {
+    background-color: #e4e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.add-student-form .box {
+    margin-bottom: 15px;
+}
+.add-student-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.add-student-form input[type="text"],
+.add-student-form input[type="email"],
+.add-student-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.add-student-form input[type="submit"] {
+    background-color: #d186e0;
+    color: #f1eaea;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.add-student-form input[type="submit"]:hover {
+    background-color: #4a055e;
+}
+.add-student-form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.add-student-form table th,
+.add-student-form table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.add-student-form table th {
+    background-color: #f1eef3;
+    font-weight: bold;
+}
+.add-student-form table tr:nth-child(even) {
+    background-color: #eae7eb;
+}
+.add-student-form table tr:hover {
+    background-color: #f3f2f3;
+}
+.add-student-form {
+    display: none; 
+}
+.add-student-form {
+    background-color: #e4e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.add-student-form .box {
+    margin-bottom: 15px;
+}
+.add-student-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*edit*/
+
+.edit-student-form input[type="text"],
+.edit-student-form input[type="email"],
+.edit-student-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.edit-student-form input[type="submit"] {
+    background-color: #d186e0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.edit-student-form {
+    background-color: #e4e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.edit-student-form input[type="submit"]:hover {
+    background-color: #4a055e;
+}
+
+.edit-student-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-student-form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.edit-student-form table th,
+.edit-student-form table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.edit-student-form table th {
+    background-color: #f1eef3;
+    font-weight: bold;
+}
+
+.edit-student-form table tr:nth-child(even) {
+    background-color: #eae7eb;
+}
+
+.edit-student-form table tr:hover {
+    background-color: #f3f2f3;
+}
+
+/* CSS for hiding the forms initially */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.form-container .box {
+    margin-bottom: 10px;
+}
+
+.form-container .box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container .box input[type="text"],
+.form-container .box input[type="email"],
+.form-container .box input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container .box input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #cdd3ce;
+    color: #fff;
+    cursor: pointer;
+}
+.main-box table, .main-box th, .main-box td {
+    border: 1px solid #ccc;
+}
+.main-box th {
+    background: #f8f9fa;
+}
+.main-box td a:hover {
+    text-decoration: underline;
+}
+.box select {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.box select:focus {
+    border-color: #080a08;
+    outline: none;
+}
